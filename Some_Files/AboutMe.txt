@@ -1,9 +1,0 @@
-------------------------------
-Name      : Chandan Pandey
-Branch    : BTECH CSE
-City      : Kolkata
-College   : JIS University
-Interests : Android, Web, SD
-------------------------------
-
-
