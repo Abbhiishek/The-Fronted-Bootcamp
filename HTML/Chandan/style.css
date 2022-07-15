@@ -1,0 +1,266 @@
+*{
+    margin : 0;
+    padding : 0;
+    font-family: poppins;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: black;
+
+}
+h1{
+    color: darkolivegreen;
+}
+.logo{
+    width : 50px;
+    height : 50px;
+}
+#nav{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    background-color: rgb(255, 204, 153);
+    position: sticky;
+}
+.links ul li{
+    list-style: none;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.links ul li:hover{
+    color: darkolivegreen;
+    transition: .5s;
+    transform: scale(1.1);
+}
+#nav .links ul a{
+    text-decoration: none;
+    color: black;
+}
+.links ul{
+    display: flex;
+    margin-left : 100px;
+    margin-right : 100px;
+
+}
+.links ul a{
+    text-decoration: none;
+}
+.logo img{
+    height: 50px;
+    width: 50px;
+    margin-right: 1em;
+}
+.cmpName{
+    display: inline-block;
+}
+.user{
+    margin-left: 100px;
+
+}
+.user button{
+    border: none;
+    background: white;
+    color: black;
+    padding: 10px;
+    width: 6rem;
+    cursor: pointer;
+}
+.user button:hover{
+    background: darkolivegreen;
+    color: white;
+    transition: .5s;
+}
+
+
+.msg::before{
+    background: url("https://source.unsplash.com/1920x1080/?pizza,margerita")
+    no-repeat center center/cover;
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index:-1;
+    opacity: 0.3;
+}
+
+#menu{
+    padding: 11em;
+    font-size: 1.5em;
+    background-color: whitesmoke;
+}
+.msg{
+    height: 80vh;
+    padding: 2em;
+}
+.msg h2{
+    text-align: center;
+    font-family: Poppins;
+    color: white;
+    margin : auto;
+    font-size: 4rem;
+    margin-top: 5em;
+}
+.msg h2:hover{
+    transition-duration: .5s;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+#opt{
+    width: 35em;
+    padding: .5em;
+    display: block;
+    margin: auto;
+    width: 50em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    cursor: pointer;
+    outline: none;
+}
+.submitBtn button{
+    display: block;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 7px;
+    margin: auto;
+    width: 8em;
+}
+.submitBtn button:hover{
+    color: black;
+    background: gold;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#menu table{
+   padding: 20px;
+   border: 1px solid black;
+   margin: auto;
+   width: 35em;
+}
+#menu{
+    height: 80vh;
+    padding: 5em;
+    background:rgb(255, 204, 153);
+}
+#menu h1{
+    margin-top: 0px;
+}
+#menu table td{
+    font-family: monospace;
+}
+#mealSel{
+    background: none;
+    height: 80vh;
+}
+#mealSel h1{
+    color: white;
+    margin-top: 13px;
+}
+.menuItem img{
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+    animation-name: forww;
+    animation-duration: 2s;
+}
+.menuItem img:hover{
+    animation-name: reverse;
+    animation-duration: 2s;
+    cursor:grab;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes forww {
+    from {
+        transform: rotate(0deg) scale(1);
+        border-radius: 0px;
+    }
+    to {
+        border-radius: 100px;
+        transform: rotate(360deg) scale(0.7);
+    }
+}
+  
+@keyframes reverse {
+    from {
+        border-radius: 100px;
+        transform: rotate(360deg) scale(0.7);
+    }
+    to {
+        border-radius: 0px;
+        transform: rotate(0deg) scale(1);
+    }
+}
+#selected{
+    color : white;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+#footer{
+    background: rgb(255, 204, 153);
+    height: 20vh;
+}
+#footer h2{
+    padding: 10px;
+
+}
+#footer{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer h4{
+    margin-top: 20px;
+    padding: 10px;
+    background: rgb(236, 179, 122);
+    font-family: monospace;
+    font-size: 1.1em;
+}
+.links{
+    display: flex;
+    padding: 2px;
+    margin-left: 40px;
+}
+.links img{
+    height: 35px;
+    width: 35px;
+    margin: 8px;
+    cursor: pointer;
+}
+.links img:hover{
+    transition: .5s;
+    transform: scale(1.2);
+}
+.scroller{
+    display: block;
+    text-align: right;
+    margin-right: 1em;
+    color: white;
+    display: inline-block;
+}
+.scroller a{
+    text-decoration: none;
+    color: black;
+    font-size: 1em;
+    background: darkolivegreen;
+    color: white;
+    font-size: 27px;
+    padding: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 50px;
+}
+
